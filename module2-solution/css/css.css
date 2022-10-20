@@ -16,7 +16,7 @@ body {
 h1 {
 	text-align: center;
 	color: #ff2331;
-	margin-bottom: 15px;
+	margin-bottom: 25px;
 	font-size: 175%;
 }
 
@@ -26,8 +26,9 @@ h1 {
 }
 
 .section {
-	border: 4px solid black;
+	border: 3px solid black;
 	text-align: center;
+	font-size: 125%;
 	overflow: none;
 	width: 100px;
 	height: 40px;
@@ -42,7 +43,7 @@ h1 {
 .content {
 	border: 5px solid black;
 	width: 90%;
-	height: 100%;
+	height: auto;
 	margin: 2.5%;
 	color: black;
 	font-size: 25px;
@@ -70,10 +71,13 @@ h1 {
 		float: left;
 		width: 33.33%;
 	}
+	.section {
+		margin-right: 7.5%;
+	}
 }
 
 /* Medium Devices */
-@media (min-width: 768px) && (max-width: 991px){
+@media (min-width: 768px) and (max-width: 991px){
 	.col-md-6, .col-md-12 {
 		float: left;
 	}
@@ -84,18 +88,18 @@ h1 {
 		width: 100%;
 		margin-left: -10px;
 	}
-	.title3 {
-    margin-right: 65px;
+	.section {
+    margin-right: 7.5%;
     width: 100px;
 	}
 }
 
-@media (min-width: 0px) && (max-width: 767px){
+@media (min-width: 0px) and (max-width: 767px){
 	.col-md-12 {
 		float: left;
 		width: 100%;
 	}
 	.section {
-		margin-right: 30px;
+		margin-right: 7.5%;
 	}
 }
